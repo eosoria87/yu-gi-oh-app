@@ -37,7 +37,9 @@
 
   const searchItem = async (/** @type {any} */ e) => { 
     filter = e.target.value && e.target.value !== '' ? e.target.value : null;
-    await updateData();
+    skip = 0;
+    take = 15;
+    await updateData();
   }
 
   const next = async () => {
